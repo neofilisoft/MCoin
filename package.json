@@ -1,0 +1,25 @@
+{
+  "name": "mcoin",
+  "version": "1.0.0",
+  "description": "MCoin - Discord Bank Bot with multi-currency wallets, exchange, staking, and external wallet API",
+  "main": "src/bot/index.js",
+  "scripts": {
+    "start": "node src/bot/index.js",
+    "start:api": "node src/api/index.js",
+    "dev": "node --watch src/bot/index.js",
+    "dev:api": "node --watch src/api/index.js",
+    "deploy": "node src/bot/deploy-commands.js",
+    "db:setup": "node src/db/setup.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "mysql2": "^3.11.3",
+    "express": "^4.21.1",
+    "node-cron": "^3.0.3",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
