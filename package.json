@@ -8,6 +8,8 @@
     "start:api": "node src/api/index.js",
     "dev": "node --watch src/bot/index.js",
     "dev:api": "node --watch src/api/index.js",
+    "start:web": "npm --prefix frontend run dev",
+    "build:web": "npm --prefix frontend run build",
     "deploy": "node src/bot/deploy-commands.js",
     "db:setup": "node src/db/setup.js"
   },
@@ -17,7 +19,10 @@
     "express": "^4.21.1",
     "node-cron": "^3.0.3",
     "axios": "^1.7.7",
-    "dotenv": "^16.4.5"
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2"
   },
   "engines": {
     "node": ">=18.0.0"
